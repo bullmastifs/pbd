@@ -545,6 +545,10 @@ ul, ol {
   justify-content: space-between;
   }
 
+  .container-logos-md {
+  flex-wrap: wrap;
+}
+
   .container-text {
     text-align: left;
   }
@@ -557,12 +561,26 @@ ul, ol {
     width: 45%;
     margin: 10px;
   }
+  
+  .item2, .item3, .item4, .item5 {
+    width: 100%;
+    margin: 10px;
+  }
+
+  .item8 {
+    width: 45%;
+    flex-wrap: wrap;
+  }
 }
 
-@media screen and (max-height: 450px) {
+@media screen and (max-width: 450px) {
 
   h1 {
     font-size: 50px;
+  }
+
+  .container-footer{
+  padding: 90px 32px 45px 32px;
   }
 
   .column1,
@@ -573,9 +591,21 @@ ul, ol {
     height: auto;
   }
 
+  #form {
+  padding: 0;
+  }
+
+  .item1 {
+    width: 100%;
+  }
+
+  .item8 {
+    width: 100%;
+  }
+
   .sidenav {
     padding-top: 15px;
-    width: 100%;
+    width: 0;
   }
 
   .sidenav a {
