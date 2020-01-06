@@ -583,10 +583,8 @@ ul, ol {
   padding: 90px 32px 45px 32px;
   }
 
-  .column1,
   .column2,
-  .column3,
-  .column4 {
+  .column3 {
     width: 100%;
     height: auto;
   }
