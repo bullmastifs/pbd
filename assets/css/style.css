@@ -202,7 +202,8 @@ ul, ol {
 
 .image-block {
   text-align: center;
-  background-image: linear-gradient(180deg,#ffffff 0%,rgba(255,255,255,0) 100%), url(../img/bags2.jpg);
+  /*background-image: linear-gradient(180deg,#ffffff 0%,rgba(255,255,255,0) 100%), url(../img/bags2.jpg);*/
+  background-image: linear-gradient(180deg,#ffffff 0%,rgba(255,255,255,0) 100%), url(../img/test.jpg);
   padding: 120px 0px 0px;
   width: 100%;
   height: 80%;
