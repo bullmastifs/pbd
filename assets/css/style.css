@@ -13,6 +13,7 @@ p {
   font-size: 18px;
   line-height: 1.8em;
   margin: 10px 0px;
+  text-align: justify;
 }
 
 body, html {
@@ -33,17 +34,14 @@ a {
   color: #f4583f;
   text-decoration: underline;
   background-color: transparent;
-  font-size: 16px;
+  font-size: 18px;
   border: none;
-  display: inline-block;
-  transition: 500ms;
+  display: block;
 }
 
 a:hover {
-  color: #1a1a1a;
+  color: #333;
   text-decoration: none;
-  display: inline-block;
-  transition: 500ms;
 }
 
 h1 {
@@ -55,7 +53,7 @@ h1 {
   padding: 0px 0px 10px;
   line-height: 1.4em !important;
   margin: 0px;
-  text-align: center;
+  text-align: left;
 }
 
 h2 {
@@ -74,8 +72,9 @@ h3 {
   display: inline-block;
   font-family: 'Muli', sans-serif;
   font-size: 40px;
-  line-height: 1.2em;
+  line-height: 42px;
   text-align: left;
+  margin-bottom: 6px;
 }
 
 input[type=text], textarea {
@@ -86,7 +85,7 @@ input[type=text], textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
   box-sizing: border-box;
-  padding: 20px;
+  padding: 15px;
   margin-bottom: 15px;
   font-size: 15px;
   font-family: 'Muli', sans-serif;
@@ -98,7 +97,7 @@ ul, ol {
   /*padding: 20px;*/
   /*width: 20%;*/
   margin: auto;
-  text-align: left;
+  text-align: justify;
 }
 
 .titles {
@@ -107,7 +106,9 @@ ul, ol {
 
 .button-large-light {
   background-color: #f4583f;
-  border: none;
+  border: 2px solid #f4583f;
+  font-family: 'Muli', sans-serif;
+  font-weight: 700;
   border-radius: 0px;
   color: #fff;
   cursor: pointer;
@@ -117,7 +118,15 @@ ul, ol {
   padding: 20px 25px;
   text-align: center;
   text-decoration: none;
-  margin: 10px 0px; 
+  margin: 10px 0px;
+  transition: 200ms;
+}
+
+.button-large-light:hover {
+  background-color: #fff;
+  border: 2px solid #f1f1f1;
+  color: #333;
+  transition: 200ms;
 }
 
 .button-form {
@@ -133,8 +142,8 @@ ul, ol {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-around;
-  margin-top: 150px;
-  margin-bottom: 150px;
+  margin: 150px 8%;
+  /*margin-bottom: 150px;*/
   height: 100px;
   color: #1a1a1a;
   position: relative;
@@ -169,16 +178,15 @@ ul, ol {
 
 #form {
   margin: 0px;
-  padding: 0px 20% 0px 20%;
+  padding: 0px 25%;
   box-sizing: border-box;
 }
 
 .footer {
   width: 100%;
-  background-color: #fff;
+  background-color: #fafafa;
   /*color: #fff;*/
-  padding-top: 10%;
-  padding-bottom: 10%;
+  padding: 10% 8%;
 }
 
 .form-container {
@@ -198,7 +206,7 @@ ul, ol {
   padding: 120px 0px 0px;
   width: 100%;
   height: 80%;
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -228,7 +236,7 @@ background-image: linear-gradient(180deg,#ffffff 0%,rgba(255,255,255,0) 100%), u
 }
 
 .text-block-1 {
-  padding: 0px 80px;
+  padding: 0px 0px;
 }
 
 .pre-item {
@@ -261,12 +269,12 @@ background-image: linear-gradient(180deg,#ffffff 0%,rgba(255,255,255,0) 100%), u
 
 .item1 {
   order: 1;
-  text-align: center;
-  margin-left: auto;
+  text-align: left;
+  margin-left: 8%;
   margin-right: auto;
-  padding: 6% 0;
-  width: 60%;
-  margin-bottom: 10%;
+  padding: 10% 0px 4% 0px;
+  width: 40%;
+  margin-bottom: 4%;
 }
 
 .item2 {
@@ -276,7 +284,7 @@ background-image: linear-gradient(180deg,#ffffff 0%,rgba(255,255,255,0) 100%), u
   background-color: #fff;
   float: left;
   position: relative;
-  padding: 100px 60px;
+  padding: 100px 60px 100px 8%;
 }
 
 .item3 {
@@ -287,7 +295,7 @@ background-image: linear-gradient(180deg,#ffffff 0%,rgba(255,255,255,0) 100%), u
   float: right;
   color: #fff!important;
   position: relative;
-  padding: 100px 60px;
+  padding: 100px 8% 100px 60px;
 }
 
 .item4 {
@@ -298,7 +306,7 @@ background-image: linear-gradient(180deg,#ffffff 0%,rgba(255,255,255,0) 100%), u
   float: right;
   color: #fff!important;
   position: relative;
-  padding: 100px 60px;
+  padding: 100px 8% 100px 60px;
 }
 
 .item5 {
@@ -331,13 +339,13 @@ background-image: linear-gradient(180deg,#ffffff 0%,rgba(255,255,255,0) 100%), u
 .logo {
   position: absolute;
   width: 100%;
-  top: 2.5em;
+  top: 60px;
   z-index: 10;
 }
 
 .logo-link {
   display: block;
-  margin: 0 40px;
+  margin: 0 60px;
   background-image: url(../img/logo.svg);
   height: 50px;
   background-repeat: no-repeat;
@@ -402,6 +410,9 @@ background-image: linear-gradient(180deg,#ffffff 0%,rgba(255,255,255,0) 100%), u
   h1 {
     text-align: left;
   }
+  #form {
+    padding: 0px 10%;
+  }
   .logo-link {
     margin: 0 60px;
   }
@@ -436,11 +447,11 @@ background-image: linear-gradient(180deg,#ffffff 0%,rgba(255,255,255,0) 100%), u
   }
   .container-logos {
     flex-wrap: wrap;
-    margin: 100px auto;
+    margin: 100px 20%;
     height: auto;
   }
   .items {
-    margin: 40px;
+    margin: 30px;
   }
   .logo-link {
     margin: 0 30px;

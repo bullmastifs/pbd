@@ -14,7 +14,7 @@
 	<meta property="og:image" content="og-image.jpg" />
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
 	<script src="assets/js/script.js" defer></script>
 </head>
 <body>
@@ -30,7 +30,7 @@
 					<div class="text-block-1">
 						<h1>Welcome to PBD!</h1>
 						<p>We provide manufacturers and distributors of name brand products with responsible inventory solutions.</p>
-						<button class="button-large-light">Learn More</button>
+						<a class="button-large-light" href="#about-us">Learn More</a>
 					</div>
 				</div>
 
@@ -38,7 +38,7 @@
 
 				<div class="item2">
 					<div class="text-block-2">
-						<h2 class="titles">About Us.</h2>
+						<h2 class="titles" id="about-us">About Us.</h2>
 						<p>We provide manufacturers and distributors of name brand products with responsible inventory solutions.
 						When growing, companies will always be faced with inventory challenges such as returns, cancelled orders, past years models, and so on.</p><p>After seeing many companies facing these challenges, Premium Brands Distribution (PBD) was established in order to provide its clients with domestic and global solutions to these inventory challenges. Our resources enable us to customize inventory solutions that create long term relationships with our suppliers.</p>
 					</div>
@@ -156,7 +156,7 @@
 					<div class="text-block-1">
 						<h1>Chrono24</h1>
 						<p>Since 2018 we operate a chrono 24 store, which we intend to develop gradually.</p>
-						<button class="button-large-light">Go to Chrono24</button>
+						<a class="button-large-light" href="https://www.chrono24.com" target="_blank">Go to Chrono24</a>
 					</div>
 				</div>
 
@@ -174,7 +174,7 @@
 						</ol>
 						<p>Should you be seeking for anything particular, feel free to send us an inquiry</p>
 					</div>
-					<button class="button-large-light" id="myBtn">Open Form</button>
+					<a class="button-large-light" id="myBtn">Open Form</a>
 
 
 
@@ -188,7 +188,8 @@
 							<span class="close">&times;</span>
 							<form>
 								<div id="form">
-									<h3 class="titles">Form.</h3>
+									<h3 class="titles">Please fill our form.</h3>
+									<p>And we contact you soon.</p>
 									<input type="text" placeholder="Your Name" name="name" required>
 									<input type="text" placeholder="E-mail" name="email" required>
 									<input type="text" placeholder="Phone" name="phone" required>
@@ -209,7 +210,7 @@
 			<div class="footer">
 				<div class="text-block-1">
 					<h2 class="titles">Contact Us.</h2>
-					<p>andris@pbdistribution.lv</p>
+					<a href="mailto:andris@pbdistribution@@?lv" onmouseover="this.href=this.href.replace('@@?','.')">andris@pbdistribution.lv</a>
 					<p>(+371) 12345678</p>
 				</div>
 			</div>
